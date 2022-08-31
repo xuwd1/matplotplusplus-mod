@@ -396,11 +396,11 @@ namespace matplot {
 
                 const ContourLine::Children &children = line.get_children();
                 // number of points in the line itself
-                size_t npoints = static_cast<size_t>(line.size() + 1);
+                //size_t npoints = static_cast<size_t>(line.size() + 1);
                 // accumulate the number of points for each line child
                 for (children_it = children.begin();
                      children_it != children.end(); ++children_it) {
-                    npoints += static_cast<size_t>((*children_it)->size() + 1);
+                    //npoints += static_cast<size_t>((*children_it)->size() + 1);
                 }
 
                 auto is_valid_point = [](double x, double y) {
